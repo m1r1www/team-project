@@ -2,6 +2,9 @@
 //	Команда:	Степкин	(в.	25, техлид), Назин	(в.	79), Тимофеев(в.86,).
 #include	<iostream>
 //	===	БЛОК	ПОДКЛЮЧЕНИЙ:	каждый	участник	добавляет	свой	заголовочный	файл	===
+//	#include	"stepkin.h"
+//	#include	"petrov.h"
+//	#include	"sidorova.h"
 #include "timofeev.h"
 //	===	КОНЕЦ	БЛОКА	ПОДКЛЮЧЕНИЙ	===
 using	namespace	std;
