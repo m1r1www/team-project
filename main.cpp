@@ -10,16 +10,16 @@
 using	namespace	std;
 
 int main() {
-    int choice;
-    double rub, amount, rate, result;
+int choice;
+double rub, amount, rate, result;
 
-    do {
-        cout << "\nМеню операций:\n";
-        cout << "5. Перевод рублей в валюту\n";
-        cout << "6. Перевод валюты в рубли\n";
-        cout << "0. Выход\n";
-        cout << "Выберите пункт: ";
-        cin >> choice;
+do {
+cout << "\nМеню операций:\n";
+cout << "5. Перевод рублей в валюту\n";
+cout << "6. Перевод валюты в рубли\n";
+cout << "0. Выход\n";
+cout << "Выберите пункт: ";
+cin >> choice;
 
         switch (choice) {
             case 5:
