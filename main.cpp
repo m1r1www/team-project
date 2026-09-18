@@ -5,43 +5,43 @@
 #include "timofeev.h"
 //	===	КОНЕЦ	БЛОКА	ПОДКЛЮЧЕНИЙ	===
 using	namespace	std;
-
 int	main()	{
 int	choice;
-//	===	БЛОК	МЕНЮ:	каждый	участник	добавляет	свои	пункты	===
-//	===	КОНЕЦ	БЛОКА	МЕНЮ	===
-double rub, amount, rate, result;
-
 do	{
+cout	<<	"\n===	Командный	проект:	сборник	расчётов	===\n";
+//	===	БЛОК	МЕНЮ:	каждый	участник	добавляет	свои	пункты	===
 cout	<<	"\n===	Командный	проект:	сборник	расчётов	===\n";
 cout << "\nМеню операций:\n";
 cout << "5. Перевод рублей в валюту\n";
 cout << "6. Перевод валюты в рубли\n";
 cout << "0. Выход\n";
 cout << "Выберите пункт: ";
-cin >> choice;
+//	===	КОНЕЦ	БЛОКА	МЕНЮ	===
+cout	<<	"0.	Выход\n";
+cout	<<	"Выберите	пункт:	";
+cin	>>	choice;
+switch	(choice)	{
 //	===	БЛОК	ОБРАБОТКИ:	каждый	участник	добавляет	свои	case	===
-        switch (choice) {
-            case 5:
-                cout << "Введите сумму в рублях: ";
-                cin >> rub;
-                cout << "Введите курс валюты: ";
-                cin >> rate;
-                result = toForeign(rub, rate);
-                if (rate > 0) {
-                    cout << "Результат в валюте: " << result << "\n";
-                }
-                break;
-            case 6:
-                cout << "Введите сумму в валюте: ";
-                cin >> amount;
-                cout << "Введите курс валюты: ";
-                cin >> rate;
-                result = toRub(amount, rate);
-                if (rate > 0) {
-                    cout << "Результат в рублях: " << result << " Руб.\n";
-                }
-                break;
+    case 5:
+        cout << "Введите сумму в рублях: ";
+        cin >> rub;
+        cout << "Введите курс валюты: ";
+        cin >> rate;
+        result = toForeign(rub, rate);
+        if (rate > 0) {
+            cout << "Результат в валюте: " << result << "\n";
+        }
+        break;
+    case 6:
+        cout << "Введите сумму в валюте: ";
+        cin >> amount;
+        cout << "Введите курс валюты: ";
+        cin >> rate;
+        result = toRub(amount, rate);
+        if (rate > 0) {
+            cout << "Результат в рублях: " << result << " Руб.\n";
+        }
+        break;
 //	===	КОНЕЦ	БЛОКА	ОБРАБОТКИ	===
 case	0:
 cout	<<	"Работа	завершена.\n";
