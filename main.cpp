@@ -9,8 +9,10 @@
 //	===	КОНЕЦ	БЛОКА	ПОДКЛЮЧЕНИЙ	===
 using	namespace	std;
 
-int main() {
-int choice;
+int	main()	{
+int	choice;
+//	===	БЛОК	МЕНЮ:	каждый	участник	добавляет	свои	пункты	===
+//	===	КОНЕЦ	БЛОКА	МЕНЮ	===
 double rub, amount, rate, result;
 
 do {
@@ -42,13 +44,11 @@ cin >> choice;
                     cout << "Результат в рублях: " << result << " Руб.\n";
                 }
                 break;
-            case 0:
-                cout << "Работа завершена.\n";
-                break;
-            default:
-                cout << "Такого пункта нет.\n";
-        }
-    } while (choice != 0);
-
-    return 0;
+case	0:
+cout	<<	"Работа	завершена.\n";
+break;
+default:
+cout	<<	"Такого	пункта	нет.\n";
 }
+}	while	(choice	!=	0);
+return	0;
