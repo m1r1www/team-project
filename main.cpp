@@ -1,11 +1,8 @@
 //	Командный	проект.	Группа	ПИ-53.
 //	Команда:	Степкин	(в.	25, техлид), Назин	(в.	79), Тимофеев(в.86,).
 #include	<iostream>
-#include "timofeev.h" // Подключаем ваш модуль
 //	===	БЛОК	ПОДКЛЮЧЕНИЙ:	каждый	участник	добавляет	свой	заголовочный	файл	===
-//	#include	"stepkin.h"
-//	#include	"petrov.h"
-//	#include	"sidorova.h"
+#include "timofeev.h"
 //	===	КОНЕЦ	БЛОКА	ПОДКЛЮЧЕНИЙ	===
 using	namespace	std;
 
@@ -53,4 +50,5 @@ default:
 cout	<<	"Такого	пункта	нет.\n";
 }
 }	while	(choice	!=	0);
-return	0;}
+return	0;
+}
