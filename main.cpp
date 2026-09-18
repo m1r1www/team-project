@@ -51,4 +51,4 @@ default:
 cout	<<	"Такого	пункта	нет.\n";
 }
 }	while	(choice	!=	0);
-return	0;
+return	0;}
