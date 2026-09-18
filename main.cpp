@@ -1,7 +1,13 @@
-#include <iostream>
+//	Командный	проект.	Группа	ПИ-53.
+//	Команда:	Степкин	(в.	25, техлид), Назин	(в.	79), Тимофеев(в.86,).
+#include	<iostream>
 #include "timofeev.h" // Подключаем ваш модуль
-
-using namespace std;
+//	===	БЛОК	ПОДКЛЮЧЕНИЙ:	каждый	участник	добавляет	свой	заголовочный	файл	===
+//	#include	"stepkin.h"
+//	#include	"petrov.h"
+//	#include	"sidorova.h"
+//	===	КОНЕЦ	БЛОКА	ПОДКЛЮЧЕНИЙ	===
+using	namespace	std;
 
 int main() {
     int choice;
