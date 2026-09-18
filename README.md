@@ -13,5 +13,5 @@
 ## Сборка и запуск
 
 ```bash
-g++ main.cpp stepkin.cpp <fam2>.cpp <fam3>.cpp -o app
+g++ main.cpp stepkin.cpp nazin.cpp timofeev.cpp -o app
 ./app
