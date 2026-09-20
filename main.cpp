@@ -37,7 +37,7 @@ int    main()    {
                 cout << "Введите массу (кг) и высоту (м): ";
                 cin >> m >> h;
                 if (m < 0 || h < 0) {
-                    cout << "ERROR, h or m < 0\n";
+                    cout << "Ошибка: масса и высота не могут быть отрицательными.\n";
                 }
                 else cout << "Потенциальная энергия = " << potentialEnergy(m, h) << " Дж\n";
                 break;
@@ -45,7 +45,11 @@ int    main()    {
             case 2:
                 cout << "Введите энергию (Дж) и массу (кг): ";
                 cin >> E >> m;
-                cout << "Высота = " << heightFromEnergy(E, m) << " м\n";
+                if (m <= 0) {
+                    cout << "Ошибка: масса должна быть больше нуля.\n";
+                } else {
+                    cout << "Высота = " << heightFromEnergy(E, m) << " м\n";
+                }
                 break;
 
             case 3:
