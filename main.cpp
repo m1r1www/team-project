@@ -2,7 +2,7 @@
 //	Команда:	Степкин	(в.	25, техлид), Назин	(в.	79), Тимофеев(в.86,).
 #include	<iostream>
 //	===	БЛОК	ПОДКЛЮЧЕНИЙ:	каждый	участник	добавляет	свой	заголовочный	файл	===
-//	#include	"stepkin.h"
+//	#include	"step==kin.h"
 #include	"nazin.h"
 //	#include	"sidorova.h"
 //	===	КОНЕЦ	БЛОКА	ПОДКЛЮЧЕНИЙ	===
@@ -24,17 +24,17 @@ switch	(choice)
         case 3:
         cout << "Введите количество калорий: ";
         cin >> choice;
-        cout << "Джоули = " << calToJ(choice) << "\n";
+        cout << calToJ(choice) << "\n";
         break;
         case 4:
         cout << "Введите количество джоулей: ";
         cin >> choice;
-        cout << "Калории = " << jToCal(choice) << "\n";
+        cout << jToCal(choice) << "\n";
         break;
         case 5:
         cout << "Введите количество килокалорий: ";
         cin >> choice;
-        cout << "Килоджоули = " << kcalToKj(choice) << "\n";
+        cout << kcalToKj(choice) << "\n";
         break;
         //	===	КОНЕЦ	БЛОКА	ОБРАБОТКИ	===
         case	0:
