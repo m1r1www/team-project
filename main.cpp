@@ -75,9 +75,12 @@ int    main()    {
                 cin >> rub;
                 cout << "Введите курс валюты: ";
                 cin >> rate;
-                result = toForeign(rub, rate);
-                if (rate > 0) {
+                if (rate > 0 ) {
+                    result = toForeign(rub, rate);
                     cout << "Результат в валюте: " << result << "\n";
+                }
+                else{
+                    cout << "Пожалуйста введите сумму или курс больше 0\n";
                 }
                 break;
 
@@ -86,9 +89,12 @@ int    main()    {
                 cin >> amount;
                 cout << "Введите курс валюты: ";
                 cin >> rate;
-                result = toRub(amount, rate);
                 if (rate > 0) {
+                    result = toRub(amount, rate);
                     cout << "Результат в рублях: " << result << " Руб.\n";
+                }
+                else {
+                    cout << "Пожалуйста введите сумму или курс больше 0"
                 }
                 break;
         //    ===    КОНЕЦ    БЛОКА    ОБРАБОТКИ    ===
