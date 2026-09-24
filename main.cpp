@@ -55,19 +55,19 @@ int    main()    {
             case 3:
                 cout << "Введите количество калорий: ";
                 cin >> amount;
-                cout << "Джоули = " << calToJ(amount) << "\n";
+                cout << calToJ(choice) << "\n";
                 break;
 
             case 4:
                 cout << "Введите количество джоулей: ";
                 cin >> amount;
-                cout << "Калории = " << jToCal(amount) << "\n";
+                cout << jToCal(choice) << "\n";
                 break;
 
             case 5:
                 cout << "Введите количество килокалорий: ";
                 cin >> amount;
-                cout << "Килоджоули = " << kcalToKj(amount) << "\n";
+                cout << kcalToKj(choice) << "\n";
                 break;
 
             case 6:
